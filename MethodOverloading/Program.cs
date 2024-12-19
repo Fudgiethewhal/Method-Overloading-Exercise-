@@ -14,7 +14,7 @@
 
         public static string Add(int numOne, int numTwo, bool isCurrency)
         {
-            var sum = numOne + numTwo;
+            var sum= numOne + numTwo;
 
             if (isCurrency && sum > 1)
             {
