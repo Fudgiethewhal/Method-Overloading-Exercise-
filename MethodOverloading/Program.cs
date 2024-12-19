@@ -26,14 +26,12 @@
             }
             else
             {
-                {
-                    return sum.ToString();
-                }
+                return sum.ToString();
             }
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(Add(1, 1, isCurrency: false));
+            Console.WriteLine(Add(2, 2, isCurrency: true));
         }
     }
 }
