@@ -16,7 +16,7 @@
         {
             var sum= numOne + numTwo;
 
-            if (isCurrency && sum > 1)
+            if (isCurrency == true && sum > 1)
             {
                 return $"{sum} dollars";
             }
@@ -24,6 +24,9 @@
             {
                 return $"{sum} dollar";
             }
+            else if (isCurrency == true && sum < 1)
+            {
+                return $"{sum} dollars";}
             else
             {
                 return sum.ToString();
@@ -32,6 +35,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine(Add(2, 2, isCurrency: true));
+            Console.WriteLine(Add(3, 4));
+            Console.WriteLine(Add(2.5m, 3.5m));
         }
     }
 }
